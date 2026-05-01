@@ -1,5 +1,9 @@
 import org.gradle.nativeplatform.platform.internal.DefaultNativePlatform
 
+target("menuBar") {
+    sourceFile("io.xpipe.jfx_runner.MenuBar")
+}
+
 /**
  * Launches an Application (does not have a main method) in the local src
  */
