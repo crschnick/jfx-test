@@ -10,6 +10,10 @@ public class MenuBar extends Application {
     static void main(String[] args) {
         // Initialize AWT
         GraphicsEnvironment.getLocalGraphicsEnvironment();
+
+        // When called here, it does not show
+        Desktop.getDesktop().setPreferencesHandler(e -> {});
+
         // Initialize JavaFX
         Application.launch(MenuBar.class);
     }
@@ -18,8 +22,7 @@ public class MenuBar extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.show();
 
-        Desktop.getDesktop().setPreferencesHandler(e -> {
-
-        });
+        // When called here, it shows
+        // Desktop.getDesktop().setPreferencesHandler(e -> {});
     }
 }
