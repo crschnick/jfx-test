@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class MenuBar extends Application {
 
-    static void main() {
+    static void main(String[] args) {
         // Initialize AWT
         GraphicsEnvironment.getLocalGraphicsEnvironment();
         // Initialize JavaFX
